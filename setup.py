@@ -32,9 +32,11 @@ TEST_DIR = 'tests'
 PROJECT_DESCRIPTION = 'Library of high-level abstractions for driving Galaxy with Selenium'
 PACKAGES = [
     'galaxy_selenium',
+    'galaxy_selenium.scripts',
 ]
 ENTRY_POINTS = '''
         [console_scripts]
+        dump-tour=galaxy_selenium.scripts.dump_tour:main
 '''
 PACKAGE_DATA = {
     # Be sure to update MANIFEST.in for source dist.

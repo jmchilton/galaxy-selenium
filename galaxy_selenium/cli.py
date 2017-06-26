@@ -46,7 +46,7 @@ def add_selenium_arguments(parser):
         help=REMOTE_PORT_DESCRIPTION,
     )
     parser.add_argument(
-        '--galaxy_url',
+        '--galaxy-url',
         default="http://127.0.0.1:8080/",
         help=GALAXY_URL_DESCRIPTION,
     )
@@ -54,7 +54,7 @@ def add_selenium_arguments(parser):
     return parser
 
 
-def args_to_kwds(self, args):
+def args_to_kwds(args):
     kwds = {
         'selenium_browser': args.selenium_browser,
         'selenium_headless': args.selenium_headless,

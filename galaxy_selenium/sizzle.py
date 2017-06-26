@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 from .has_driver import exception_indicates_stale_element
 
-SIZZLE_LOAD_TIMEOUT = 5
+SIZZLE_LOAD_TIMEOUT = 15
 SIZZLE_URL = "//cdnjs.cloudflare.com/ajax/libs/sizzle/1.10.18/sizzle.js"
 
 
